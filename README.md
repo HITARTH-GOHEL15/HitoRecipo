@@ -42,9 +42,7 @@ Spoonacular API key
 ---
 
 ## Clone the Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/yourusername/HitoRecipo.git
 cd HitoRecipo
 
