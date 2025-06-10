@@ -90,8 +90,7 @@ HitoRecipo/
 ├── androidApp/       # Native Android app using Jetpack Compose
 ├── iosApp/           # iOS app consuming shared Kotlin logic (SwiftUI or UIKit)
 ├── shared/           # Shared Kotlin code (data, domain, networking, logic)
-│   ├── data/         # Ktor client, repository, API calls
-│   ├── domain/       # Models, use-cases, interfaces
-│   ├── presentation/ # ViewModels and state management
+│   ├── data/         # Ktor client, repository, API calls , models   
+│   ├── ui/ # ViewModels and state management
 │   └── di/           # Koin modules and setup
 
