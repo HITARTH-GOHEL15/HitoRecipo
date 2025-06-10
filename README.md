@@ -1,14 +1,42 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# 🍽️ HitoRecipo – Kotlin Multiplatform Recipe App
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+**HitoRecipo** is a cross-platform recipe browsing app built using **Kotlin Multiplatform** (KMP). It lets users view and search delicious recipes using the powerful **Spoonacular API**. Built with modern technologies like Jetpack Compose, Ktor, MVVM, and Koin, the app is designed to be clean, modular, and scalable across Android and iOS.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+---
 
+## 🚀 Tech Stack
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+| Layer             | Technology             |
+|------------------|------------------------|
+| Language         | Kotlin Multiplatform   |
+| UI (Android)     | Jetpack Compose        |
+| Networking       | Ktor                   |
+| Architecture     | MVVM                   |
+| Dependency DI    | Koin                   |
+| API Provider     | Spoonacular API        |
+| Shared Logic     | Kotlin Multiplatform   |
+
+---
+
+## 📱 Features
+
+- 🍲 **View Recipes** – Browse a wide variety of recipes from the Spoonacular API
+- 🔍 **Search Recipes** – Find recipes by keywords or ingredients
+- 📋 **Recipe Details** – See full recipe info including ingredients and instructions
+- 📦 **KMP Support** – Shared business logic runs on both Android and iOS
+- ⚙️ **MVVM Architecture** – Clean and maintainable code structure
+- 💉 **Koin for DI** – Modular and testable components
+
+---
+
+## 📦 Project Structure
+
+```text
+HitoRecipo/
+├── androidApp/       # Native Android app using Jetpack Compose
+├── iosApp/           # iOS app consuming shared Kotlin logic (SwiftUI or UIKit)
+├── shared/           # Shared Kotlin code (data, domain, networking, logic)
+│   ├── data/         # Ktor client, repository, API calls
+│   ├── domain/       # Models, use-cases, interfaces
+│   ├── presentation/ # ViewModels and state management
+│   └── di/           # Koin modules and setup
