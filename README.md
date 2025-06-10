@@ -40,3 +40,51 @@ HitoRecipo/
 │   ├── domain/       # Models, use-cases, interfaces
 │   ├── presentation/ # ViewModels and state management
 │   └── di/           # Koin modules and setup
+
+🔧 Setup Instructions
+Prerequisites
+Android Studio Giraffe or newer
+
+Kotlin Multiplatform plugin
+
+Xcode (for iOS)
+
+Spoonacular API key (Get it here)
+
+Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/HitoRecipo.git
+cd HitoRecipo
+
+🌐 API Reference
+Base URL: https://api.spoonacular.com/
+
+Authentication: API Key in query params
+
+Example Endpoint: GET /recipes/complexSearch
+
+🧑‍💻 Contributing
+We welcome contributions! If you'd like to improve the app, fix bugs, or add features:
+
+Fork the repo
+
+Create a new branch
+
+Make your changes
+
+Submit a Pull Request 🚀
+
+💬 Contact
+Made by Hitarth Gohel
+
+For questions or suggestions, feel free to open an issue or reach out via GitHub.
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you want a `LICENSE` file, contribution guidelines, or sample screenshots added!
