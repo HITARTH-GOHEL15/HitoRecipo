@@ -29,18 +29,6 @@
 
 ---
 
-## 📦 Project Structure
-
-```text
-HitoRecipo/
-├── androidApp/       # Native Android app using Jetpack Compose
-├── iosApp/           # iOS app consuming shared Kotlin logic (SwiftUI or UIKit)
-├── shared/           # Shared Kotlin code (data, domain, networking, logic)
-│   ├── data/         # Ktor client, repository, API calls
-│   ├── domain/       # Models, use-cases, interfaces
-│   ├── presentation/ # ViewModels and state management
-│   └── di/           # Koin modules and setup
-
 ## 🔧 Setup Instructions
 Prerequisites
 Android Studio Giraffe or newer
@@ -88,3 +76,19 @@ Submit a Pull Request 🚀
 Made by Hitarth Gohel
 
 For questions or suggestions, feel free to open an issue or reach out via GitHub.
+
+---
+
+
+## 📦 Project Structure
+
+```text
+HitoRecipo/
+├── androidApp/       # Native Android app using Jetpack Compose
+├── iosApp/           # iOS app consuming shared Kotlin logic (SwiftUI or UIKit)
+├── shared/           # Shared Kotlin code (data, domain, networking, logic)
+│   ├── data/         # Ktor client, repository, API calls
+│   ├── domain/       # Models, use-cases, interfaces
+│   ├── presentation/ # ViewModels and state management
+│   └── di/           # Koin modules and setup
+
